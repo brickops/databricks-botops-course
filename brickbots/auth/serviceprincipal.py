@@ -41,7 +41,7 @@ def _fresh_service_principal_token(client_id: str, secret: str, databricks_host:
         auth=(client_id, secret),
     )
 
-    print(response.text)
+    # print(response.text)
 
     response.raise_for_status()
     ret = response.json()

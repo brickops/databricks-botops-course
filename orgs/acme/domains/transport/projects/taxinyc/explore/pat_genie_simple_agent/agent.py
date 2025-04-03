@@ -48,9 +48,17 @@ from brickbots.auth.serviceprincipal import get_service_principal_token
 GENIE_SPACE_ID = "01efed0b36a81d6d9d47ec959434617c"
 
 
+
+def get_workspace_client_pat():
+    host = os.getenv("DATABRICKS_HOST") or os.getenv("DB_MODEL_SERVING_HOST_URL")
+    return WorkspaceClient(
+        host=host,
+        token=os.getenv("DATABRICKS_GENIE_PAT"),
+    ),
+
+
 def get_workspace_client():
-    host = os.getenv("BOTOPSGENIE_DATABRICKS_HOST")
-    print(f"host: {host}")
+    host = os.getenv("DATABRICKS_HOST") or os.getenv("DB_MODEL_SERVING_HOST_URL")
     token = get_service_principal_token(
         client_id=os.getenv("BOTOPSGENIE_SERVICE_PRINCIPAL_ID"),
         secret=os.getenv("BOTOPSGENIE_SERVICE_PRINCIPAL_SECRET"),
@@ -61,7 +69,8 @@ def get_workspace_client():
         token=token,
     )
 
-client = get_workspace_client()
+# client = get_workspace_client()
+client = get_workspace_client_pat()
 genie = Genie(GENIE_SPACE_ID, client=client)
 
 
