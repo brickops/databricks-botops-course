@@ -40,8 +40,6 @@ from brickops.datamesh.naming import dbname
 
 # COMMAND ----------
 
-import logging
-logging.getLogger("brickops").setLevel(logging.INFO)
 catalog = "transport"
 tripbot_db = dbname(cat=catalog, db="tripbot")
 tripbot_db
