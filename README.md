@@ -1,15 +1,15 @@
-# databricks-dataops-course
-Course for doing databricks dataops, based on a data mesh monorepo structure
+# databricks-botops-course
+
+Course for doing BotOps (e.g. ML/LLM/AgentOps) on Databricks dataops, based on a data mesh monorepo structure.
+
+
+## What is a Bot?
+
+TODO A Bot is a an app which uses LLM components, e.g. an agent (if it does autonomous routing/decisions).
 
 ## Preparation
 
-1. All members must get commit access to:
-    - the repo from the teacher
-    - the databricks training workspace
-
-## Purpose of the course
-
-How can we deploy Databricks data pipelines in a way that is:
+How can we deploy Databricks bots in a way that is:
 
 - (git-)versioned
 - usable
@@ -22,7 +22,7 @@ How can we deploy Databricks data pipelines in a way that is:
 
 We will do our tasks in the context of the folder representing the revenue data pipeline or flow:
 
-`orgs/acme/domains/transport/projects/taxinyc/flows/prep/revenue/`
+`orgs/acme/domains/transport/projects/taxinyc/flows/ml/tripbot/`
 
 The structure is a proposal, which might have to be adapted in a real world organization.
 
@@ -42,7 +42,7 @@ The structure will be applied to:
 
 The purpose of this structure is to have sufficient granularity to enable each department/org, team/domain, project and pipeline, to be kept apart.
 
-You can explore the structure here in Databricks, or more easily [in the repo with a browser](https://github.com/paalvibe/databricks-dataops-course).
+You can explore the structure here in Databricks, or more easily [in the repo with a browser](https://github.com/paalvibe/databricks-botops-course).
 
 ## Longer explanation of the repo structure
 
