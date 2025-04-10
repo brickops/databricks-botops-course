@@ -5,22 +5,22 @@ Course for doing BotOps (e.g. ML/LLM/AgentOps) on Databricks dataops, based on a
 
 ## What is a Bot?
 
-TODO A Bot is a an app which uses LLM components, e.g. an agent (if it does autonomous routing/decisions).
+A Bot is a an app which uses LLM components, e.g. an agent (if it does autonomous routing/decisions), a chatbot,
+or an LLM-based endpoint which replies to requests using LLM (Large Language Models=).
 
-## Preparation
+## Focus
 
 How can we deploy Databricks bots in a way that is:
 
 - (git-)versioned
 - usable
 - ordered and sustainable
-- enabling decentralized domain ownership for each data domain and team
-    - this somehow enables data mesh-like principles
+- enabling each developer / data scientist to do deploy
 - way of working for exploration, development, staging and production of pipelines
 
 ## Repository structure
 
-We will do our tasks in the context of the folder representing the revenue data pipeline or flow:
+We will do our tasks in the context of the folder representing the `tripbot` ml flow:
 
 `orgs/acme/domains/transport/projects/taxinyc/flows/ml/tripbot/`
 
@@ -31,11 +31,12 @@ The structure is:
 - org: `acme`
     - domain: `transport`
         - project: `taxinyc`
-            - flowtype: `prep` (meaning ETL/data engineering, the alternative is `ml`, for ML work)
+            - flowtype: `ml` (meaning Machine Learning / AI, the alternative is `prep`, for ETL/data engineering)
                 - flow: `revenue` 
 
 The structure will be applied to:
 
+- Agent / model naming
 - Data *code*, i.e. the pyspark code herein git
 - The database *tables* produced by that code
 - The data pipelines being deployed
@@ -52,9 +53,10 @@ A longer explanation of the ideas behind the repo structure can be found in the 
 
 For the dataops code, we use the [brickops](https://github.com/brickops/brickops) package from Pypi, to enable a versioned pipeline deployment and way of working. The main logic is under [dataops/deploy](https://github.com/brickops/brickops/blob/main/brickops/dataops/deploy/autojob.py).
 
-## Reusing the structure and dataops libs
+## Reusing the structure and libs
 
-The structure and brickops libs can be used in your own projects, by forking the repo or copying the content and adapting it.
+The structure and brickops libs can be used in your own projects, by installing the pypi package `brickops`, 
+forking the repo and copying the content and adapting it.
 
 ## Course
 
