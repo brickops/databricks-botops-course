@@ -36,4 +36,5 @@
 # MAGIC
 # MAGIC ## Task: Explore data
 # MAGIC
-# MAGIC Open a new tab, and go to `orgs/acme/domains/transport/projects/taxinyc/flows/prep/taxinyc/explore/taxinyc_revenue`.
+# Magic Remember that this step should be done within your git repo, not in the catalog structure in databricks
+# MAGIC Open a new tab, and go to `orgs/acme/domains/transport/projects/taxinyc/explore/taxinyc_revenue`.
