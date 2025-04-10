@@ -49,13 +49,15 @@ GENIE_SPACE_ID = "01efed0b36a81d6d9d47ec959434617c"
 
 
 def get_workspace_client():
-    host = os.getenv("BOTOPSGENIE_DATABRICKS_HOST")
+    host = "dbc-639f4875-165d.cloud.databricks.com"
+    # host = os.getenv("BOTOPSGENIE_DATABRICKS_HOST")
     print(f"host: {host}")
     token = get_service_principal_token(
         client_id=os.getenv("BOTOPSGENIE_SERVICE_PRINCIPAL_ID"),
         secret=os.getenv("BOTOPSGENIE_SERVICE_PRINCIPAL_SECRET"),
         databricks_host=host,
     )
+    print("len(token): " + str(len(token)))
     return WorkspaceClient(
         host=host,
         token=token,
