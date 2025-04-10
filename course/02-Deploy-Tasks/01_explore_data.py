@@ -34,7 +34,8 @@
 
 # MAGIC %md
 # MAGIC
-# MAGIC ## Task: Explore data
+# MAGIC ### Task: Explore data
 # MAGIC
-# Magic Remember that this step should be done within your git repo, not in the catalog structure in databricks
-# MAGIC Open a new tab, and go to `orgs/acme/domains/transport/projects/taxinyc/explore/taxinyc_revenue`.
+# MAGIC Remember that this step should be done in the catalog structure in databricks. You can reach the root by going up two levels.
+# MAGIC
+# MAGIC Open a new tab, and go to `orgs/acme/domains/transport/projects/taxinyc/explore/revenue/revenue`.
