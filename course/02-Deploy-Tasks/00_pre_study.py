@@ -23,6 +23,7 @@
 # MAGIC
 # MAGIC The structure will be applied to:
 # MAGIC
+# MAGIC - Model / Bot / Agent naming
 # MAGIC - Data *code*, i.e. the pyspark code herein git
 # MAGIC - The database *tables* produced by that code
 # MAGIC - The data pipelines being deployed

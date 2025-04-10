@@ -14,7 +14,7 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ### 1. Create the taxi_db database in Databricks
+# MAGIC ### 1. Create tripbot database in Databricks
 # MAGIC
 # MAGIC Specific for the student
 
