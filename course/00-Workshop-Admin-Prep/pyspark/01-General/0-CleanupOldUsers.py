@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %sql
-# MAGIC use catalog training;
+# MAGIC use catalog transport;
 
 # COMMAND ----------
 
@@ -37,7 +37,7 @@ first_schema = None
 for schema in schemas:
     first_schema = schema
     # print(schema['name'])
-    if schema.name.startswith("dev_"):
+    if schema.name.startswith("alek"):
         print(f"Drop schema {schema.name}")
         spark.sql(f"DROP SCHEMA {schema.name} CASCADE")
 first_schema
