@@ -2,6 +2,15 @@
 
 Course for doing BotOps (e.g. ML/LLM/AgentOps) on Databricks dataops, based on a data mesh monorepo structure.
 
+## What will you learn in this course?
+
+* How to build LLM Bots on Databricks 
+* Move LLM Bots (chat bots, agents etc) from dev to prod 
+* Using git branches and commits 
+* We will not do Github Actions here, but the processes and code needed are shown
+* Evaluation-driven development
+* Testing Bots with chat interfaces 
+* Structure your environments to allow for dev deployments of Bots 
 
 ## What is a Bot?
 
