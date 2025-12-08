@@ -1,6 +1,6 @@
 # databricks-botops-course
 
-Course for doing BotOps (e.g. ML/LLM/AgentOps) on Databricks dataops, based on a data mesh monorepo structure.
+Course for doing AgentOps (e.g. ML/LLM/AIOps/BotOps) on Databricks, based on a data mesh monorepo structure.
 
 ## What will you learn in this course?
 
